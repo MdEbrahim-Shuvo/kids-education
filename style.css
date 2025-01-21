@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Quicksand", serif;
+font-family: "Raleway", serif;
+*/
+
+:root {
+    /* font related varriable */
+    --font-logo: 700 2rem/1.88rem "Quicksand", serif;
+    --font-nav: 500 1.25rem/1.88rem "Quicksand", serif;
+    --font-btn: 700 1.25rem/1.88rem "Quicksand", serif;
+    --font-bannerTitle: 700 3.50rem/3.81rem "Quicksand", serif; 
+    --font-sectionTitle: 700 2.88rem/3.59rem "Quicksand", serif;
+    --font-sectionSubtitle: 700 1.53rem/ 1.92rem "Quicksand", serif; 
+    --font-sectionDesc: 500 0.96rem/ 1.80rem "Raleway", serif; 
+    --font-sectionDesc-bold: 700 0.96rem/ 1.80rem "Quicksand", serif; 
+    --font-footerLogo: 700 2.63rem/2.47rem "Quicksand", serif;
+    --font-footerDesc: 400 1.25rem "Quicksand", serif;
+    --font-footerTitle: 700  1.63rem/ 1.63rem "Quicksand", serif;
+
+    /* color related varriable */
+    --color-body: rgba(247, 247, 247, 1);
+    --color-white-100: rgba(255, 255, 255, 1);
+    --color-black: rgba(17, 17, 17, 1);
+    --color-storyBtn: rgba(149, 178, 38, 1);
+    --color-white: rgba(247, 247, 247, 1);
+    --color-orange: rgba(254, 163, 1, 1);
+    --color-skyBlue: rgba(1, 172, 253, 1);
+    --color-aquaLike: rgba(5, 212, 223, 1);
+    --color-blueLike: rgba(93, 88, 239, 1);
+    --color-sectionTitle: rgba(0, 0, 0, 1);
+    --color-staTitle-black: rgba(32, 32, 32, 1);
+    --color-gray-80: rgba(128, 128, 128, 1);
+    --color-gray-66: rgba(102, 102, 102, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-body);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* common style */
+.d-flex {
+    display: flex;
+}
+.w-100 {
+    width: 100%;
+}
+
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/*====== logo part design ======== */
+.logo {
+    align-items: center;
+}
+.logo-text {
+    font: var(--font-logo);
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+.text-orange {
+    color: rgba(254, 163, 1, 1);
+}
+.text-skyBlue {
+    color: rgba(1, 172, 253, 1);
+}
+.text-aquaLike {
+    color: rgba(5, 212, 223, 1);
+}
+.text-blueLike {
+    color: rgba(93, 88, 239, 1);
+}
+
+/*====== Nav-menu part design ======== */
+
+.nav-menu {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font: var(--font-nav);
+}
+
+/* ========= nav-btn part ============ */
+
+.btn {
+    font: var(--font-btn);
+    color: var(--color-white-100);
+    background-color: var(--color-skyBlue);
+    padding: 10px 60px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* ========= nav-icon part ============ */
+.nav-icon {
+    display: none;
+}
+.nav-icon i {
+    font-size: 30px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* ========= Banner part design ============ */
+
+.banner-container {
+    gap: 3.13rem;
+    align-items: center;
+}
+.banner-text-content {
+    width: 40.00rem;
+}
+
+.banner-title {
+    font: var(--font-bannerTitle);
+    color: var(--color-black);
+}
+.primary-span {
+    color: var(--color-orange);
+}
+.scondary-span {
+    color: var(--color-skyBlue);
+}
+.banner-description {
+    font: var(--font-footerDesc);
+    color: var(--color-black);
+    margin: 24px 0;
+}
+.primary-btn {
+    font: var(--font-btn);
+    color: var(--color-white-100);
+    background-color: var(--color-black);
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.banner-img-content {
+    height: 35.94rem;
+    width:  36.00rem;
+}
+.h-100 {
+    height: 100%;
+}
+/* ========== standard curriculum part =============== */
+#curriculum {
+    /* height: 54.94rem; */
+    padding: 60px 0;
+    background: url(assets/bg.png) no-repeat;
+    background-size: cover;
+    background-position: -365px 0px;  
+}
+.secition-title {
+    font: var(--font-sectionTitle);
+    color: var(--color-sectionTitle);
+    text-align: center;
+}
+
+.curriculum-card-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.81rem;
+    margin: 80px 0;
+
+    
+}
+.card-box {
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.05);
+    padding: 52px 40px;
+    text-align: center;
+    border-radius: 19px;
+}
+.skyBlue {
+    background: linear-gradient(rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0.8) 40%);
+}
+.orange {
+    background: linear-gradient(rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0.8) 40%);
+}
+.violet {
+    background: linear-gradient(rgba(238, 225, 255, 1) 0%, rgba(255, 255, 255, 0.8) 40%);
+}
+.green {
+    background: linear-gradient(rgb(230, 255, 219) 0%, rgba(255, 255, 255, 0.8) 40%);
+    display: none;
+}
+
+.card-box-title {
+    font: var(--font-sectionSubtitle);
+    color: var(--color-staTitle-black);
+    margin-top: 33px;
+}
+.card-box-description {
+    font: var(--font-sectionDesc);
+    color: var(--color-gray-80);
+    margin: 33px 0;
+}
+.card-box-btn {
+    text-decoration: none;
+    font: var(--font-sectionDesc-bold);
+}
+
+
+.arrows-box i {
+    color: var(--color-white-100);
+    font-size: 30px;
+    padding: 17px 22px;
+    border-radius: 50px;
+    background: var(--color-orange);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.right:hover {
+    transform: translateX(20px);
+}
+.left:hover {
+    transform: translateX(-20px);
+}
+.align-center {
+    text-align: center;
+}
+
+.text-trans {
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+/*  ============ nav-bar part ============= */
+    .nav-btn {
+        display: none;
+    }
+    /* ========== banner part ================== */
+    .banner-container {
+        gap: 2rem;
+    }
+
+    /* ======= curriculum ========== */
+    .curriculum-card-box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .green {
+        display: block;
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    
+/* ========== nav-bar part ============= */
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    /* ========== banner part ================== */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-text-content {
+        text-align: center;
+    }
+/* ======= curriculum ========== */
+    .curriculum-card-box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .green {
+        display: block;
+    }
+}
+@media only screen and (max-width: 576px) {
+    
+/* ========== nav-bar part ============= */
+    .nav-bar {
+        border-bottom: 2px solid rgba(255, 232, 191, 1);
+    }
+    .menu-box {
+        display: none;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+    }
+/* ========== banner part ================== */
+    
+.banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-text-content {
+        text-align: center;
+        width: 100%;
+    }
+    .banner-img-content {
+        width: 100%;
+    }
+
+    /* ========= curriculum =========== */
+    .curriculum-card-box-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+

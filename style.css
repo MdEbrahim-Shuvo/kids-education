@@ -365,6 +365,7 @@ body {
     }
     .banner-text-content {
         text-align: center;
+        width: 100%;
     }
 /* ======= curriculum ========== */
     .curriculum-card-box-container {
@@ -374,22 +375,14 @@ body {
         display: block;
     }
     /* ====== story part ======== */
-    #stories {
-        width: 100%;
-        overflow: hidden;
-    }
     .stories-container {
         flex-direction: column;
-        width: 100%;
     }
     .stories-box-1 {
         width: 100%;
     }
     .stories-box-2 {
         gap: 10px;
-        width: 100%;
-    }
-    .story-short-box {
         width: 100%;
     }
     .story-btn {
@@ -405,9 +398,7 @@ body {
     .w-500 {
         width: 100%;
     }
-    .view-btn {
-        width: 100%;
-    }
+    
 }
 @media only screen and (max-width: 576px) {
     

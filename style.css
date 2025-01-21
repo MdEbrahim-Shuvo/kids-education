@@ -61,12 +61,16 @@ body {
 }
 
 /*====== logo part design ======== */
+.link {
+    text-decoration: none;
+    color: var(--color-black)
+}
 .logo {
     align-items: center;
 }
 .logo-text {
     font: var(--font-logo);
-    color: var(--color-black);
+    ;
     text-transform: uppercase;
 }
 .text-orange {
@@ -109,6 +113,11 @@ body {
     border: none;
     border-radius: 12px;
     cursor: pointer;
+    transition: transform 1s ease;
+    transform: scale(1.1);
+}
+.btn:hover {
+    transform: scale(1);
 }
 
 /* ========= nav-icon part ============ */
@@ -153,6 +162,10 @@ body {
     border: none;
     border-radius: 12px;
     cursor: pointer;
+    transition: transform 1s ease;
+}
+.primary-btn:hover {
+    transform: translateX(20px);
 }
 
 .banner-img-content {
@@ -214,6 +227,10 @@ body {
     padding: 52px 40px;
     text-align: center;
     border-radius: 19px;
+    transition: transform 1s ease;
+}
+.card-box:hover {
+    transform: scale(1.1);
 }
 .skyBlue {
     background: linear-gradient(rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0.8) 40%);
@@ -274,6 +291,7 @@ body {
     background: url(assets/bg.png), linear-gradient(360deg, rgba(254, 161, 1, 0.223)  30%, rgb(255, 255, 255, 1) 100%);
     background-size: contain;
     background-repeat: repeat;
+    border-radius: 16px 16px 0 0;
 
 }
 .stories-container {
@@ -300,6 +318,10 @@ body {
     position: relative;
     bottom: 1.88rem;
     left: 2.44rem;
+    transition: transform 1s ease;
+}
+.story-btn:hover {
+    transform: scale(1.1);
 }
 .story-skyBlue {
     background-color: var(--color-skyBlue);
@@ -403,6 +425,11 @@ body {
 }
 .footer-none-1 {
     display: none;
+}
+
+.link-1 {
+    text-decoration: none;
+    color: var(--color-white-100)
 }
 
 

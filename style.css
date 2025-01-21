@@ -359,8 +359,9 @@ body {
     justify-content: space-between;
 }
 
-.logo-text {
+.logo-text-footer {
     color: var(--color-white-100);
+    font: var(--font-logo);
 }
 
 .footer-logo {
